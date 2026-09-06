@@ -1,0 +1,8 @@
+
+==================================================
+Confusion Matrix
+==================================================
+                     Predicted
+                benign    malignant
+Actual benign    |  1085     16   
+Actual malignant |  397      625  
