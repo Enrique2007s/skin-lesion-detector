@@ -228,7 +228,7 @@ altair
 No images apart form the dataset and testing images in the melanoma detector page were used.
 
 ## Notes
-If you go into my forked projects, you will see the first part of the commit history of this project. Why am I saying this? Well, get ready to read the story of this project!\
+If you go into my forked projects, you will see the first part of the commit history of this project. Why am I saying this? Well, get ready to read the story of this project!
 
 I believe I have the best story to tell when working with this project. First, I was working normally with this project in a forked repository. Then, suddenly, everything stopped working, saying thinsg such as "[library] could not be resolved" in yellow writing, so I tried looking for ways to resolve this. I could not continue on for some reason as the code blocks would refuse to run correctly. I spent a whole day fixing this, and could not, so in the end I just made a new repository using the template from CI as a template(yes, the green template button on the top right). After that, everything seemed to work again!
 Then, when I tried working on the model, I started obtaining horrendous looking graphs. I have a few notes I will rewrite onto this readme:
