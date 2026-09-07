@@ -175,8 +175,7 @@ Metrics: Accuracy, which is used to monitor performance during training
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-24](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+* The App live link is: [https://YOUR_APP_NAME.herokuapp.com/ ](https://skin-lesion-detector-d087d703e2d2.herokuapp.com/)
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
@@ -186,29 +185,52 @@ Metrics: Accuracy, which is used to monitor performance during training
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
-
 ## Main Data Analysis and Machine Learning Libraries
 * Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+joblib
+keras
+matplotlib
+numpy
+pandas
+pillow
+plotly
+scikit-learn
+seaborn
+tensorflow
+streamlit
+altair
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Dataset: [Kaggle Dataset](https://www.kaggle.com/datasets/hasnainjaved/melanoma-skin-cancer-dataset-of-10000-images)
+  
+* helping videos and information for melanoma cancer information:
+  - [How much skin cancer screening costs](https://www.goodrx.com/conditions/skin-cancer/skin-cancer-screening-cost?srsltid=AfmBOoqWdySiClqBRJmTx8iOJqa_Pk9e4ZLXaAUM99NA4laO1DAJfto4)
+  - [Economic burden of skin cancer in the USA](https://pmc.ncbi.nlm.nih.gov/articles/PMC11001479/)
+  - [Analytics Vidhya](https://www.youtube.com/live/Vb7g3N-NNuM?si=ewqX0VFwAWyipXPC)
+  - [series of videos about deep learning](https://youtu.be/aircAruvnKk?si=B3vR-CTtbuX2IoiQ)
 
-### Content 
+ DeepSeek: An amazing tool not only for learning, but also for resolving problems when deploying locally and on Heroku.
+ Emmett: Integrated AI in the codespace. Used for logic cleaning and speeding up the creating of plots with suggestions.
+ - [Numpy](https://numpy.org/doc/) 
+ - [Pandas](https://pandas.pydata.org/docs/)
+ - [Matplotlib](https://matplotlib.org/stable/)
+ - [Seaborn](https://seaborn.pydata.org/)
+ - [Plotly](https://plotly.com/python/)
+ - [TensorFlow](https://www.tensorflow.org/)
+ - [Keras](https://keras.io/)
+ - [Scikit-learn](https://scikit-learn.org/stable/)
+ - [Streamlit](https://docs.streamlit.io/)
+ - [Github Codespaces](https://github.com/features/codespaces)
+ - [Git/GitHub](https://git-scm.com/docs)
+ - Some code cells were used as reference from the walkthrough project for detecting malaria inside cells. It really helped me know what I had to do after each step and helped me understand how to develop code that saves models, saves plots, and how to work with a Streamlit Dashboard
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+No images apart form the dataset and testing images in the melanoma detector page were used.
 
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
-
+* I would like to thank Marcel, my mentor, for helping me develop the end stages of my project. He was very informative and we had a great conversation.
+* I would like to thank the person who created this [project](https://github.com/oks-erm/ML-mildew-detection). I guided myself off this project for the readme and end stages of the project.
+* I would like to thank Marko, my facilitator who helped me get in contact with my mentor and encouraged me in my final months as as Student in Code Institute
+* Lastly, I want to thank my amazing parents. They have supported me throughout the whole way and have given me various suggestions for this project.
