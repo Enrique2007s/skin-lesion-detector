@@ -55,7 +55,7 @@ def page_skin_lesion_visualizer():
             f" harmless and do not spread to other parts of the body. "
             f"Common types of benign lesions include moles, freckles, and skin tags.**\n\n"
 
-            f"Malignant lesions are cancerous growths on the skin. They can spread "
+            f"**Malignant lesions are cancerous growths on the skin. They can spread "
             f"to other parts of the body if not detected early. They are usually darker "
             f" in color and have an irregular shape. The most common type of malignant "
             f"lesion is melanoma.**\n\n"

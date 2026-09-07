@@ -41,7 +41,7 @@ def plot_predictions_probabilities(pred_proba, pred_class): #I have no idea why 
     st.plotly_chart(fig)
     st.info(
         f"The addition of the probabilities of benign and malignant should equal 1."
-        f"In the bar chart, probabilities are represented as a fraction of 1, where 1 represents 100% probability."
+        f"In the bar chart, probabilities are represented as a fraction of 1, where 1 represents 100% probability. "
         f"Multiplying the probabilities by 100 will convert them to percentages, where 100% represents a certainty of the prediction."
     )
 
