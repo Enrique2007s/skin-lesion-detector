@@ -2,7 +2,7 @@ import streamlit as st
 
 def page_instructions_body():
     st.write(
-    f"**Usage guidelines for the Streamlit Dashboard:**\n\n"
+    f"**Guidelines for the Streamlit Dashboard:**\n\n"
 )
 
     st.info(
@@ -29,7 +29,7 @@ def page_instructions_body():
         f"images. The uploaded images are then processed by the machine learning model, which "
         f"performs the actual prediction."
         f"The page also displays the prediction results, including the predicted "
-        f"class (malignant or benign) and the associated confidence score.\n\n"
+        f"class (malignant or benign) and the associated confidence of correct detection score.\n\n"
         f"if the model predicts with a low confidence score, the user can compare "
         f"their skin patch with the images in the Melanoma Visualizer page."
     )

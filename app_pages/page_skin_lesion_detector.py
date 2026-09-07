@@ -10,8 +10,8 @@ version = 'v1'
 
 def page_skin_lesion_detector_body():
     st.info(
-        f"Here you can upload an image of a skin lesion and the model will predict "
-        f"the type of lesion it is. The model is trained on a dataset of various "
+        f"Here you can upload an image of a skin lesion and the model will give its bet interpretation of what "
+        f"type of lesion it is. The model is trained on a dataset of various "
         f"skin lesions and can help in identifying whether the lesion is benign or malignant. "
         f"Please note that this tool is for educational purposes only and should not "
         f"be used as a substitute for professional medical advice."

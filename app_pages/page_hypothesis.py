@@ -36,7 +36,7 @@ def page_hypothesis_body():
     st.success(
         f"**The model achieved an accuracy of 0.81 on the test set, which indicates "
         f"that it was able to learn these patterns and characteristics to some extent. "
-        f"However, as previously stated, it falls short when identifying malignant lesions.**\n\n"
+        f"However, as previously stated, it falls short when identifying some malignant lesions.**\n\n"
         f"**This can be considered as a success, as the model can be used as a screening "
         f"tool to identify potential cases of melanoma, "
         f"which can then be referred to a dermatologist for further evaluation.**")
@@ -61,7 +61,8 @@ def page_hypothesis_body():
 
     st.write(
         f" In conclusion, the model was able to accurately label benign skin lesions. "
-        f" However, when it comes to malignant skin lesions, it struggled to identify them accurately."
+        f" When it comes to malignant skin lesions, it struggled to identify them accurately. However,"
+        f" with hyperparameter optimization, this should dramatically improve."
         f" \n\n\n\n"
         f"#### Future Improvements\n\n"
         f"To improve the model's performance, we can consider the following future improvements:\n\n"

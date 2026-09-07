@@ -225,9 +225,6 @@ def page_model_performance():
         f" Validation loss is unstable, with large spikes and no consistent downward trend. "
         f" This is a sign of overfitting, where the model performs well on the training data but poorly on unseen validation data."
     )
-    st.info(
-        f" The ROC curve is a graphical representation of the diagnostic ability of a binary classifier system as its discrimination threshold is varied. It plots the true positive rate against the false positive rate."
-    )
 
     st.write("---")
 
@@ -246,6 +243,6 @@ def page_model_performance():
     st.info(
         f"The ROC curve is very strong, with an AUC of 0.9597."
         f" This indicates that the model has a high ability to distinguish between the two classes."
-        f" Howeverm the ROC curve evaluates all possible thresholds. At the current threshold of 0.5, "
+        f" However, the ROC curve evaluates all possible thresholds. At the current threshold of 0.5, "
         f" the model is only catching 61% of actual skin cancers, which is a major concern."
     )

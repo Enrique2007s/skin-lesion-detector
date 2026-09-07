@@ -22,16 +22,16 @@ def page_summary():
         f"The proposed solution is a Machine Leaning(ML) model capable of "
         f"detecting melanoma from skin lesion images. \n\n"
 
-        f"The dataset was collected from \"Melanoma Skin Cancer Dataset of 10000 Images\" dataset in Kaggle, "
+        f"The dataset was collected from \"Melanoma Skin Cancer Dataset of 10,000 Images\", which is a dataset in Kaggle, "
         f"created by: Muhammad Hasnain Javid."
     )
 
     st.write(
         f"**Additional Information:**\n\n"
         f"For additional information about melanoma, please visit the following resources:\n\n"
-        f"- [American Academy of Dermatology](https://www.aad.org/public/everyday-care/skin-care-basics/sun-protection)\n\n"
+        f"- [American Academy of Dermatology](https://www.aad.org/public)\n\n"
         f"- [Skin Cancer Foundation](https://www.skincancer.org/)\n\n"
-        f"- [National Cancer Institute](https://www.aad.org/public)\n\n"
+        f"- [National Cancer Institute](https://www.cancer.gov/)\n\n"
         f"Or if you want to learn about the project itself, please visit the [README File](https://github.com/Enrique2007s/skin-lesion-detector/blob/main/README.md)"
     )
 
