@@ -9,9 +9,9 @@ from app_pages.page_instructions import page_instructions_body
 from app_pages.page_summary import page_summary
 from app_pages.page_skin_lesion_visualizer import page_skin_lesion_visualizer
 from app_pages.page_skin_lesion_detector import page_skin_lesion_detector_body
-# from app_pages.page_model_performance import page_model_performance
+from app_pages.page_performance_metrics import page_model_performance
 
-app = MultiPage(melanoma_detector_app="Melanoma Detector")
+app = MultiPage("Melanoma Detector")
 
 app.add_page("Instructions", page_instructions_body)
 app.add_page("Summary", page_summary)

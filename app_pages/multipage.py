@@ -4,7 +4,7 @@ import streamlit as st
 class MultiPage:
     def __init__(self, melanoma_detector) -> None:
         self.melanoma_detector = melanoma_detector
-        self.pages
+        self.pages = []
 
         st.set_page_config(page_title = 'Melanoma Detector', page_icon=":🥼")
 

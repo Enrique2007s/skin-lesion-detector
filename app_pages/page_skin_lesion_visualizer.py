@@ -2,14 +2,11 @@ import streamlit as st
 import os
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
-import itertools
-import random
 
-my_data_dir = 'inputs/skin_cancer_dataset/melanoma_cancer_dataset'
-labels = os.listdir(my_data_dir + '/validation')
+my_data_dir = os.path.join('inputs', 'skin_cancer_dataset', 'melanoma_cancer_dataset') #cross platform compatibility
+outputs = os.path.join('outputs', 'v1') #cross platform compatibility
 version = 'v1'
 
 def page_skin_lesion_visualizer():
@@ -21,21 +18,35 @@ def page_skin_lesion_visualizer():
         f"look for in each type.**\n\n"
     )
 
+
     #Average and Variability images of benign and malignant lesions
     if st.checkbox("Difference between average and variability images of benign and malignant lesions"):
         st.write(
-            f"**The average image of benign lesions is generally lighter in color "
-            f"and has a more uniform appearance.**\n\n"
+            f"**The average image of benign lesions is generally lighter in color.** "
+            f"**It also has a more uniform appearance.**\n\n"
         )
-        avg_benign = imread(my_data_dir + '/avg_var_benign.png')
+        st.write(
+            f"**The average image of malignant lesions is generally darker in color.** "
+            f"**It also has a more irregular appearance.**\n\n"
+        )
+        st.write(
+            f"**The variability image of benign lesions shows the range of normal "
+            f"variations in the appearance of benign lesions.**\n\n"
+        )
+        st.write(
+            f"**The variability image of malignant lesions shows the range of abnormal "
+            f"variations in the appearance of malignant lesions.**\n\n"
+        )
+        avg_benign = imread(outputs + '/avg_var_benign.png')
         st.image(avg_benign, caption="Average Image of Benign Lesions")
 
         st.write(
             f"**The average image of malignant lesions shows more variation in darker "
             f" colors and has a more irregular appearance.\n\n"
         )
-        avg_malignant = imread(my_data_dir + '/avg_var_malignant.png')
+        avg_malignant = imread(outputs + '/avg_var_malignant.png')
         st.image(avg_malignant, caption="Average Image of Malignant Lesions")
+
 
     #Difference between benign and malignant lesions
     if st.checkbox("Difference between benign and malignant skin lesions"):
@@ -43,16 +54,18 @@ def page_skin_lesion_visualizer():
         st.write(
             f"**Benign lesions are non-cancerous growths on the skin. They are usually "
             f" harmless and do not spread to other parts of the body. "
-            f"Common types of benign lesions include moles, freckles, and skin tags.\n\n"
+            f"Common types of benign lesions include moles, freckles, and skin tags.**\n\n"
 
             f"Malignant lesions are cancerous growths on the skin. They can spread "
-            f"to other parts of the body if not detected early. "
-            f"**\n\n"
+            f"to other parts of the body if not detected early. They are usually darker "
+            f" in color and have an irregular shape. The most common type of malignant "
+            f"lesion is melanoma.**\n\n"
         )
-        benign_vs_malignant = imread(my_data_dir + '/benign_vs_malignant.png')
+        benign_vs_malignant = imread(outputs + '/benign_vs_malignant_difference.png')
         st.image(benign_vs_malignant, caption="Benign VS Malignant Lesions")
 
 
+    #Characteristics of benign and malignant lesions
     if st.checkbox("Characteristics of benign and malignant lesions"):
         st.write(
             f"**When examining benign lesions, look for the following characteristics:**\n\n"
@@ -68,20 +81,23 @@ def page_skin_lesion_visualizer():
             f"- Size: Malignant lesions are often larger than 6mm in diameter and may continue to grow over time.\n\n"
         )
 
+    # Malignant image montage
     if st.checkbox("Malignant image montage"):
         st.write(
             f"**The user can use the montage to compare and analyze the characteristics "
             f"of malignant lesions.**\n\n"
         )
-        malignant_montage = imread(my_data_dir + '/malignant_montage.png')
+        malignant_montage = imread(outputs + '/malignant_montage.png')
         st.image(malignant_montage, caption="Montage of Malignant Lesions")
 
+
+    # Benign image montage
     if st.checkbox("Benign image montage"):
         st.write(
             f"**The user can use the montage to compare and analyze the characteristics "
             f"of benign lesions.**\n\n"
         )
-        benign_montage = imread(my_data_dir + '/benign_montage.png')
+        benign_montage = imread(outputs + '/benign_montage.png')
         st.image(benign_montage, caption="Montage of Benign Lesions")
 
 

@@ -31,7 +31,7 @@ def page_summary():
         f"For additional information about melanoma, please visit the following resources:\n\n"
         f"- [American Academy of Dermatology](https://www.aad.org/public/everyday-care/skin-care-basics/sun-protection)\n\n"
         f"- [Skin Cancer Foundation](https://www.skincancer.org/)\n\n"
-        f"- [National Cancer Institute](https://www.cancer.gov/types/skin)"
+        f"- [National Cancer Institute](https://www.aad.org/public)\n\n"
         f"Or if you want to learn about the project itself, please visit the [README File](https://github.com/Enrique2007s/skin-lesion-detector/blob/main/README.md)"
     )
 
