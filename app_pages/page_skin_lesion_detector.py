@@ -37,3 +37,10 @@ def page_skin_lesion_detector_body():
 
     else:
         st.warning("Please upload an image to get predictions(must be in jpg or png format).")
+
+
+    st.write(
+        f" If you don't have any images, you can enter [this link](https://www2.skincancer.org/skin-cancer-information/skin-cancer-pictures/)"
+        f". Then, scroll down and click on Melanoma on the types of skin conditions. Please select "
+        f"an image that does not contain purple markings, nails, or large objects as this may confuse the model."
+    )
