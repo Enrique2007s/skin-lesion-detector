@@ -5,7 +5,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.image import imread
 
-my_data_dir = os.path.join('inputs', 'skin_cancer_dataset', 'melanoma_cancer_dataset') #cross platform compatibility
 outputs = os.path.join('outputs', 'v1') #cross platform compatibility
 version = 'v1'
 
@@ -100,17 +99,8 @@ def page_skin_lesion_visualizer():
         benign_montage = imread(outputs + '/benign_montage.png')
         st.image(benign_montage, caption="Montage of Benign Lesions")
 
-
-
-
-
-
-
-
-
-
-
-
+    st.write("---")
+    
     st.info(
         f"**Benign Lesions:**\n\n"
         f"Benign lesions are non-cancerous growths on the skin. They are usually "
